@@ -1,8 +1,10 @@
 version: "2.3"
 services:
-  nginx:
-    build: ./nginx #Указываем откуда будет вестись сборка
-    ports: # Указываем какие порты нужно пробросить наружу
+  app-one:
+    build: ./app-one
+    ports:
       - "80:80"
-    volumes: #Подключаем рабочий каталог с кодом проекта
-      - ./www:/var/www
+  app-two:
+    build: ./app-two
+    ports:
+      - "8080:8080"

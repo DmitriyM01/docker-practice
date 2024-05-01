@@ -1,0 +1,41 @@
+#game-board {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #ffffff;
+    position: relative;
+}
+
+body {
+    background: black;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 35%;
+}
+
+.snake {
+    background-color: green;
+}
+
+.fruit {
+    background-color: red;
+}
+
+.obstacle {
+    background-color: gray;
+}
+
+#score {
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+#timer {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -60%;
+    color: #ffffff;
+    font-size: 50px;
+}
